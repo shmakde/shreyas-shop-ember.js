@@ -1,0 +1,29 @@
+  <article class="listing">
+    <a
+        onclick={{action "toggleImageSize"}}
+        class="image {{if this.isWide "wide"}}"
+        role="button"
+    >
+        <img src={{this.product.image}} alt="{{this.product.title}}">
+        <small>View Larger</small>
+    </a>
+    <div class="details">
+      <h3>{{this.product.title}}</h3>
+      <div class="detail owner">
+        <span>Supplier:</span> {{this.product.supplier}}
+      </div>
+      <div class="detail type">
+        <span>Price Category:</span> {{this.product.pricecategory}}
+      </div>
+      <div class="detail location">
+        <span>Color:</span> {{this.product.color}}
+      </div>
+      <div class="detail bedrooms">
+        <span>Price in $:</span> {{this.product.price}}
+      </div>
+      
+      <button class="button">
+        Add To Cart
+      </button>
+    </div>
+  </article>

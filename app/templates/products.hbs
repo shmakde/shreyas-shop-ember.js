@@ -1,0 +1,15 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Welcome to:<br/>ShreyCart Access!</h2>
+  <p>I hope you find exactly what you're looking for in a place to stay.</p>
+  {{#link-to "about" class="button"}}
+    Go To Cart
+  {{/link-to}}
+  <a href="https://github.com/shmakde" class="button">
+    Go To GitHub
+  </a>
+</div>
+
+{{#each this.model as |productUnit|}}
+  <ProductListing @product={{productUnit}} />
+{{/each}}
